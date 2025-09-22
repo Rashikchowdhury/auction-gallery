@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+body{
+    background-color: #EBF0F5;
+}
+
+.font-popins{
+    font-family: "Poppins", sans-serif;
+}
+
+.font-sora{
+    font-family: "Sora", sans-serif;
+}
+
+.table{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+hr{
+    color: rgb(204, 201, 201);
+}
+
+.fav-table{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    /* align-items: center; */
+}
