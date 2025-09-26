@@ -22,6 +22,11 @@ const Productcs = () => {
         setTotalFavItemsPrice(totalFavItemsPrice + product.currentBid);
     }
 
+    const removedFavItem = (remainingFavItems) => {
+        setFavItem(remainingFavItems);
+        remainingFavItems.length == 0 && setHidden(false);
+    }
+
     return (
         <div>
             <div className='w-[80vw] m-auto my-[132px] font-sora'>
@@ -65,10 +70,13 @@ const Productcs = () => {
                             {
                                 favItem.map(item => <FavItems
                                     key={item.id}
-                                    item={item}>
-
+                                    item={item}
+                                    removedFavItem={removedFavItem}
+                                    favItem={favItem}
+                                >
                                 </FavItems>)
                             }
+
                         </div>
                         <hr />
                         <div className='flex justify-around items-center'>

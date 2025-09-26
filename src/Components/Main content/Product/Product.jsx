@@ -36,7 +36,7 @@ const Product = ({ product, addItemsOnClick }) => {
                     <p>{product.name}</p>
                 </div>
                 <div>
-                    <p>{product.currentBid}</p>
+                    <p>${product.currentBid}</p>
                 </div>
                 <div>
                     <p>{product.timeLeft}</p>
