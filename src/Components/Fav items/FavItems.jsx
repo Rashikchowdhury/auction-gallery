@@ -14,6 +14,10 @@ const FavItems = ({ item }) => {
         }
     });
 
+    const handleCross = () => {
+        notify();
+    }
+
     return (
         <div>
             <div className='flex items-center gap-4 border p-3 rounded-xl border-gray-300 fav-table'>
@@ -32,7 +36,7 @@ const FavItems = ({ item }) => {
 
                 </div>
                 <div>
-                    <button className='btn bg-red-500 text-white rounded-full w-[10px] h-[30px]' onClick={notify}>x</button>
+                    <button className='btn bg-red-500 text-white rounded-full w-[10px] h-[30px]' onClick={handleCross}>x</button>
                 </div>
             </div>
         </div>
