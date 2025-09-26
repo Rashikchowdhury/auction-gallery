@@ -29,7 +29,7 @@ const FavItems = ({ item }) => {
                     <div>
                         <p>{item.name}</p>
                         <div className='flex items-center justify-center gap-6 mt-2'>
-                            <p>{item.currentBid}</p>
+                            <p>${item.currentBid}</p>
                             <p>Bids: {item.bids}</p>
                         </div>
                     </div>

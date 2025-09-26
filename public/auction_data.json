@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Vintage Camera",
     "description": "A classic 1960s film camera in great condition.",
-    "currentBid": "$850",
+    "currentBid": 850,
     "timeLeft": "2 Days left",
     "bids": 8,
     "img": "https://i.postimg.cc/ZnMCjRJf/Bid1-min.png"
@@ -12,7 +12,7 @@
     "id": 2,
     "name": "Electric Guitar",
     "description": "Classic Fender electric guitar, perfect for rock enthusiasts.",
-    "currentBid": "$2850",
+    "currentBid": 2850,
     "timeLeft": "1 Days left",
     "bids": 9,
     "img": "https://i.postimg.cc/MGmHNtWf/Bid2-min.png"
@@ -21,7 +21,7 @@
     "id": 3,
     "name": "Gaming Laptop",
     "description": "High-performance laptop with RTX 4060 GPU and 16GB RAM.",
-    "currentBid": "$1750",
+    "currentBid": 1750,
     "timeLeft": "3 Days left",
     "bids": 15,
     "img": "https://i.postimg.cc/Y0ZCYsxZ/Bid3-min.png"
@@ -30,7 +30,7 @@
     "id": 4,
     "name": "Luxury Watch",
     "description": "Stainless steel luxury wrist watch with leather strap.",
-    "currentBid": "$1320",
+    "currentBid": 1320,
     "timeLeft": "5 Days left",
     "bids": 12,
     "img": "https://i.postimg.cc/7LwY37gH/Bid4-min.png"
@@ -39,7 +39,7 @@
     "id": 5,
     "name": "Modern Chair",
     "description": "Comfortable wooden chair with cushioned seating.",
-    "currentBid": "$460",
+    "currentBid": 460,
     "timeLeft": "2 Days left",
     "bids": 7,
     "img": "https://i.postimg.cc/J7vrTSbd/Bid5-min.png"
@@ -48,7 +48,7 @@
     "id": 6,
     "name": "Rare Book",
     "description": "First edition vintage book, highly collectible.",
-    "currentBid": "$250",
+    "currentBid": 250,
     "timeLeft": "7 Days left",
     "bids": 11,
     "img": "https://i.postimg.cc/vBjsN666/Bid6-min.png"
@@ -57,7 +57,7 @@
     "id": 7,
     "name": "Flower Bouquet",
     "description": "Freshly picked flowers arranged in a beautiful bouquet.",
-    "currentBid": "$120",
+    "currentBid": 120,
     "timeLeft": "3h 45m left",
     "bids": 5,
     "img": "https://i.postimg.cc/VkR5HDsr/Bid7-min.png"

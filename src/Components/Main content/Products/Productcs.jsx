@@ -14,10 +14,12 @@ const Productcs = () => {
 
     const [hidden, setHidden] = useState(false);
     const [favItem, setFavItem] = useState([])
+    const [totalFavItemsPrice, setTotalFavItemsPrice] = useState(0);
 
     const addItemsOnClick = (product) => {
         setHidden(true);
         setFavItem([product, ...favItem]);
+        setTotalFavItemsPrice(totalFavItemsPrice + product.currentBid);
     }
 
     return (
@@ -61,13 +63,17 @@ const Productcs = () => {
                         </div>
                         <div className={hidden ? "space-y-3" : "hidden"}>
                             {
-                                favItem.map(item => <FavItems key={item.id} item={item}></FavItems>)
+                                favItem.map(item => <FavItems
+                                    key={item.id}
+                                    item={item}>
+
+                                </FavItems>)
                             }
                         </div>
                         <hr />
                         <div className='flex justify-around items-center'>
                             <h3>Total bids Amount: </h3>
-                            <p>$0000</p>
+                            <p>${totalFavItemsPrice}</p>
                         </div>
                     </div>
                 </div>
