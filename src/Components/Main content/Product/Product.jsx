@@ -4,8 +4,7 @@ import { useState } from "react";
 import { toast } from 'react-toastify';
 
 
-const Product = ({ product, addItemsOnClick }) => {
-    const [liked, setLiked] = useState(false);
+const Product = ({ product, addItemsOnClick, rashik }) => {
     const notify = () => toast.success(`"${product.name}" added to favourites!`, {
         position: "top-right",
         autoClose: 2000,
@@ -17,7 +16,8 @@ const Product = ({ product, addItemsOnClick }) => {
             padding: "12px 20px"
         }
     });
-
+    
+    const [liked, setLiked] = useState(false);
     const [disabled, setDisabled] = useState(false);
 
     const handleClicked = () => {
@@ -26,6 +26,8 @@ const Product = ({ product, addItemsOnClick }) => {
         setDisabled(!disabled);
         addItemsOnClick(product);
     }
+    
+    rashik(liked, disabled)
 
 
     return (

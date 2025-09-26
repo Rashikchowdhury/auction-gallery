@@ -22,9 +22,15 @@ const Productcs = () => {
         setTotalFavItemsPrice(totalFavItemsPrice + product.currentBid);
     }
 
-    const removedFavItem = (remainingFavItems) => {
+    const removedFavItem = (remainingFavItems, removedItem) => {
         setFavItem(remainingFavItems);
         remainingFavItems.length == 0 && setHidden(false);
+        const removedItemPrice = removedItem[0].currentBid;
+        setTotalFavItemsPrice(totalFavItemsPrice - removedItemPrice);
+    }
+
+    const rashik = (name) => {
+        console.log(name);
     }
 
     return (
@@ -48,7 +54,9 @@ const Productcs = () => {
                             products.map(product => <Product
                                 key={product.id}
                                 product={product}
-                                addItemsOnClick={addItemsOnClick}>
+                                addItemsOnClick={addItemsOnClick}
+                                rashik={rashik}
+                            >
                             </Product>)
                         }
                         <ToastContainer />
@@ -73,6 +81,8 @@ const Productcs = () => {
                                     item={item}
                                     removedFavItem={removedFavItem}
                                     favItem={favItem}
+                                    rashik={rashik}
+
                                 >
                                 </FavItems>)
                             }

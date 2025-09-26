@@ -1,7 +1,7 @@
 import React from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 
-const FavItems = ({ item, favItem, removedFavItem }) => {
+const FavItems = ({ item, favItem, removedFavItem, rashik }) => {
     const notify = () => toast.error(`"${item.name}" removed from favourites!`, {
         position: "top-right",
         autoClose: 2000,
@@ -17,11 +17,15 @@ const FavItems = ({ item, favItem, removedFavItem }) => {
     const handleCross = () => {
         notify();
         removeFavItem();
+        rashik();
     }
 
     const removeFavItem = () => {
-        const remainingFavItems = favItem.filter(unit => unit.id != item.id)
-        removedFavItem(remainingFavItems)
+        const remainingFavItems = favItem.filter(unit => unit.id != item.id);
+        const removedItem = favItem.filter(unit => unit.id == item.id);
+        
+        removedFavItem(remainingFavItems, removedItem)
+        
     }
     
 
